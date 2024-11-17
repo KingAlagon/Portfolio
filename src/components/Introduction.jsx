@@ -5,7 +5,7 @@ function Introduction() {
     useEffect(() => {
         // Initialize Typed.js on the ".multiple-text" element
         const typed = new Typed(".multiple-text", {
-            strings: ["Programmer.", "Virtual Assistant.", "Data Anaylst."],
+            strings: ["Programmer.", "Virtual Assistant.", "Data Analyst."],
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 1000,
