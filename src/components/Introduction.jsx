@@ -21,7 +21,7 @@ function Introduction() {
     return (
         <div id="introduction" className="relative flex flex-col-reverse md:flex-row items-center md:items-start justify-between p-8 md:p-20 text-white">
             {/* Text Content */}
-            <div className="flex flex-col space-y-6 md:w-1/2 mt-20 z-10">
+            <div className="flex flex-col space-y-6 md:w-1/2 mt-20 sm:mt-10 sm:px-4 z-10">
                 <h1 className="text-3xl md:text-5xl font-bold mb-2">
                     Hello! <br /> I'm King Christopher <br /> Alagon<span className="text-yellow-500">.</span>
                 </h1>
@@ -41,12 +41,10 @@ function Introduction() {
                 </a>
             </div>
 
+
             {/* Image as Background for Mobile */}
             <div className="absolute inset-0 md:relative md:w-1/2">
-                <img
-                    src="/images/me.png"
-                    alt="Me"
-                    className="w-full h-full object-cover md:w-full md:h-auto md:rounded-lg opacity-20 md:opacity-100"
+                <img src="/images/me.png" alt="Me" className="w-full h-full object-cover md:w-full md:h-auto md:rounded-lg opacity-20 md:opacity-100"
                 />
             </div>
         </div>
