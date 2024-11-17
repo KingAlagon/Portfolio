@@ -65,26 +65,28 @@ const Experience = () => {
                 </div>
                 <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {experiences.map((exp, index) => (
-                        <div
-                            key={index}
-                            className="relative bg-gray-800 h-80 p-6 rounded-lg shadow-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105" data-aos="flip-right">
+                        <div data-aos="flip-right" data-aos-once="true" className="relative">
+                            <div
+                                key={index}
+                                className="relative bg-gray-800 h-80 p-6 rounded-lg shadow-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105" >
 
-                            <div className="absolute inset-0 flex flex-col items-center justify-center text-white transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0">
-                                {exp.icon}
-                                <h3 className="text-xl font-semibold">{exp.role}</h3>
-                                <p className="text-gray-400 font-medium text-center">
-                                    {exp.company} {exp.location && `| ${exp.location}`} | {exp.date}
-                                </p>
-                            </div>
+                                <div className="absolute inset-0 flex flex-col items-center justify-center text-white transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0">
+                                    {exp.icon}
+                                    <h3 className="text-xl font-semibold">{exp.role}</h3>
+                                    <p className="text-gray-400 font-medium text-center">
+                                        {exp.company} {exp.location && `| ${exp.location}`} | {exp.date}
+                                    </p>
+                                </div>
 
 
-                            <div className="absolute inset-0 bg-gray-800 p-6 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-                                <h3 className="text-xl font-semibold text-center">{exp.role}</h3>
-                                <ul className="mt-4 text-gray-300 list-disc list-inside space-y-2 text-left">
-                                    {exp.details.map((detail, idx) => (
-                                        <li key={idx}>{detail}</li>
-                                    ))}
-                                </ul>
+                                <div className="absolute inset-0 bg-gray-800 p-6 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                    <h3 className="text-xl font-semibold text-center">{exp.role}</h3>
+                                    <ul className="mt-4 text-gray-300 list-disc list-inside space-y-2 text-left">
+                                        {exp.details.map((detail, idx) => (
+                                            <li key={idx}>{detail}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     ))}
