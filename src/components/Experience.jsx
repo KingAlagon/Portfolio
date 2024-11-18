@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FaLaptopCode, FaDatabase, FaChartLine } from 'react-icons/fa';
+import { FaLaptopCode, FaDatabase, FaChartLine, FaConnectdevelop, FaCodepen, FaCode } from 'react-icons/fa';
 import "aos/dist/aos.css";
 import AOS from "aos";
 
@@ -39,6 +39,19 @@ const Experience = () => {
             icon: <FaDatabase className="text-4xl text-yellow-500 mb-2" />,
         },
         {
+            role: 'Web Developer - Project Manager',
+            company: 'KLAN 3D PRINTING INC.',
+            location: '',
+            date: 'August 27, 2024 - November 2024',
+            details: [
+                'Laravel Framework',
+                'CPANEL Web Hosting',
+                'Tailwindcss',
+                'MySQL Database',
+            ],
+            icon: <FaCode className="text-4xl text-yellow-500 mb-2" />,
+        },
+        {
             role: 'Virtual Assistant - Data Analyst - Data Entry',
             company: 'M and M Business Solutions Company',
             location: '',
@@ -52,6 +65,7 @@ const Experience = () => {
             ],
             icon: <FaChartLine className="text-4xl text-yellow-500 mb-2" />,
         },
+
     ];
 
     return (
@@ -63,7 +77,7 @@ const Experience = () => {
                         A proven track record of professional experience in IT, programming, and data analysis. I have contributed to the success of diverse teams, leveraging my technical expertise in software development, database management, and analytical tools to deliver results and drive growth.
                     </p>
                 </div>
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
                     {experiences.map((exp, index) => (
                         <div data-aos="flip-right" data-aos-once="true" className="relative">
                             <div
