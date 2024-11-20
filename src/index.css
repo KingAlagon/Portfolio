@@ -2,13 +2,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body, html {
+
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
 }
+
 ul li a:hover svg {
-    fill: #beaa38; 
+  fill: #beaa38;
+}
+
+.preloader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #0f0f1c, #1c1c28);
+  z-index: 9999;
+}
+
+.loading-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFD700;
+  letter-spacing: 0.2rem;
+}
+
+.loading-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.loading-text {
+  animation: glowing-breathe 2.5s infinite ease-in-out;
+}
+
+@keyframes glowing-breathe {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 15px #9C8A2E,
+      0 0 30px #9C8A2E,
+      0 0 45px #9C8A2E;
   }
-  
+
+  50% {
+    text-shadow:
+      0 0 30px #9C8A2E,
+      0 0 40px #9C8A2E,
+      0 0 50px #9C8A2E;
+  }
+}
+
+.loading-text .dot {
+  opacity: 0;
+  transform: translateY(0);
+}
