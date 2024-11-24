@@ -119,6 +119,12 @@ function Skills() {
                                 <div className="h-2 bg-yellow-500" style={{ width: "85%" }}></div>
                             </div>
                         </li>
+                        <li className="flex items-center">
+                            <span className="w-2/3">Zapier</span>
+                            <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
+                                <div className="h-2 bg-yellow-500" style={{ width: "85%" }}></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
