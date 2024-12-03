@@ -30,25 +30,25 @@ function Skills() {
                         <li className="flex items-center">
                             <span className="w-2/3">VB.Net</span>
                             <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
-                                <div className="h-2 bg-yellow-500" style={{ width: "60%" }}></div>
+                                <div className="h-2 bg-yellow-500" style={{ width: "55%" }}></div>
                             </div>
                         </li>
                         <li className="flex items-center">
                             <span className="w-2/3">MySQL</span>
                             <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
-                                <div className="h-2 bg-yellow-500" style={{ width: "75%" }}></div>
+                                <div className="h-2 bg-yellow-500" style={{ width: "65%" }}></div>
                             </div>
                         </li>
                         <li className="flex items-center">
                             <span className="w-2/3">PHP</span>
                             <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
-                                <div className="h-2 bg-yellow-500" style={{ width: "75%" }}></div>
+                                <div className="h-2 bg-yellow-500" style={{ width: "70%" }}></div>
                             </div>
                         </li>
                         <li className="flex items-center">
                             <span className="w-2/3">HTML/CSS/Javascript</span>
                             <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
-                                <div className="h-2 bg-yellow-500" style={{ width: "75%" }}></div>
+                                <div className="h-2 bg-yellow-500" style={{ width: "70%" }}></div>
                             </div>
                         </li>
                         <li className="flex items-center">
@@ -60,7 +60,7 @@ function Skills() {
                         <li className="flex items-center">
                             <span className="w-2/3">Laravel</span>
                             <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
-                                <div className="h-2 bg-yellow-500" style={{ width: "75%" }}></div>
+                                <div className="h-2 bg-yellow-500" style={{ width: "70%" }}></div>
                             </div>
                         </li>
                     </ul>
@@ -127,6 +127,12 @@ function Skills() {
                         </li>
                         <li className="flex items-center">
                             <span className="w-2/3">Zapier</span>
+                            <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
+                                <div className="h-2 bg-yellow-500" style={{ width: "85%" }}></div>
+                            </div>
+                        </li>
+                        <li className="flex items-center">
+                            <span className="w-2/3">CPANEL Web Hosting</span>
                             <div className="w-1/3 bg-gray-700 rounded-full overflow-hidden">
                                 <div className="h-2 bg-yellow-500" style={{ width: "85%" }}></div>
                             </div>
