@@ -33,7 +33,7 @@ function Introduction() {
                     I am a recent graduate with a strong passion for programming,<br /> eager to make a meaningful impact in the technology world<br /> through my portfolio of innovative projects.
                 </p>
                 <a
-                    href="/files/ALAGON_KING_CHRISTOPHER_RESUME.pdf"
+                    href="/files/ALAGON_KING CHRISTOPHER_RESUME_Updated.pdf"
                     download
                     className="inline-block px-6 py-2 w-40 text-center border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 transition-colors"
                 >
