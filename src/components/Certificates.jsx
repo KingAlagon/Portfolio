@@ -8,7 +8,7 @@ export default function CertificateSection() {
         { title: "English Certificate", image: "/certificates/English-Certificate.png", delay: "100" },
         { title: "DISC Assessment", image: "/certificates/DISC-Assessment.png", delay: "200" },
         { title: "Attention to Detail", image: "/certificates/Attention-to-detail.png", delay: "300" },
-        { title: "Psychological Test", image: "/certificates/Psychtest.png", delay: "400" },
+        { title: "Classical IQ Test", image: "/certificates/Psychtest.png", delay: "400" },
         { title: "Cyber Wellness Webinar", image: "/certificates/Cyber-wellness-webinar.png", delay: "400" }
     ];
 
@@ -27,9 +27,9 @@ export default function CertificateSection() {
                     {certificates.map((cert, index) => (
                         <div
                             key={index}
-                            data-aos="fade-left" 
+                            data-aos="fade-left"
                             data-aos-duration="1000"
-                            data-aos-delay={cert.delay} 
+                            data-aos-delay={cert.delay}
                             className="relative flex flex-col items-center cursor-pointer"
                         >
                             <h3 className="text-yellow-500 text-xl font-semibold mb-2">{cert.title}</h3>
