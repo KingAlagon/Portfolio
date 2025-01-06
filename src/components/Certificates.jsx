@@ -8,7 +8,8 @@ export default function CertificateSection() {
         { title: "English Certificate", image: "/certificates/English-Certificate.png", delay: "100" },
         { title: "DISC Assessment", image: "/certificates/DISC-Assessment.png", delay: "200" },
         { title: "Attention to Detail", image: "/certificates/Attention-to-detail.png", delay: "300" },
-        { title: "Psychological Test", image: "/certificates/Psychtest.png", delay: "400" }
+        { title: "Psychological Test", image: "/certificates/Psychtest.png", delay: "400" },
+        { title: "Cyber Wellness Webinar", image: "/certificates/Cyber-wellness-webinar.png", delay: "400" }
     ];
 
     return (
@@ -22,7 +23,7 @@ export default function CertificateSection() {
                 </div>
 
                 {/* Certificate Grid */}
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
                     {certificates.map((cert, index) => (
                         <div
                             key={index}
