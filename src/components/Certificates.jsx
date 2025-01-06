@@ -3,12 +3,12 @@ import { useState } from "react";
 export default function CertificateSection() {
     const [selectedImage, setSelectedImage] = useState(null);
 
-    // Certificates data
+    // Certificates data with individual animation delays
     const certificates = [
-        { title: "English Certificate", image: "/certificates/English-Certificate.png" },
-        { title: "DISC Assessment", image: "/certificates/DISC-Assessment.png" },
-        { title: "Attention to Detail", image: "/certificates/Attention-to-detail.png" },
-        { title: "Psychological Test", image: "/certificates/Psychtest.png" }
+        { title: "English Certificate", image: "/certificates/English-Certificate.png", delay: "100" },
+        { title: "DISC Assessment", image: "/certificates/DISC-Assessment.png", delay: "200" },
+        { title: "Attention to Detail", image: "/certificates/Attention-to-detail.png", delay: "300" },
+        { title: "Psychological Test", image: "/certificates/Psychtest.png", delay: "400" }
     ];
 
     return (
@@ -24,17 +24,19 @@ export default function CertificateSection() {
                 {/* Certificate Grid */}
                 <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                     {certificates.map((cert, index) => (
-                        <div key={index}
-                            data-aos="fade-up"
+                        <div
+                            key={index}
+                            data-aos="fade-left" 
                             data-aos-duration="1000"
+                            data-aos-delay={cert.delay} 
                             className="relative flex flex-col items-center cursor-pointer"
                         >
                             <h3 className="text-yellow-500 text-xl font-semibold mb-2">{cert.title}</h3>
                             <div
                                 className="overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105"
-                                onClick={() => setSelectedImage(cert.image)} // Ensure the click event works
+                                onClick={() => setSelectedImage(cert.image)}
                             >
-                                <img src={cert.image} alt={cert.title} className="h-[300px] w-[250px] object-cover" />
+                                <img src={cert.image} alt={cert.title} className="h-[320px] w-[350px] object-cover" />
                             </div>
                         </div>
                     ))}

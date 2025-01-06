@@ -4,11 +4,11 @@ import { Link } from "react-scroll";
 function Header() {
     return (
         <header className="flex flex-col md:flex-row justify-between items-center py-20 px-4 md:px-20 lg:px-40 text-white">
-            <a href="/" className="text-2xl md:text-2xl font-bold text-yellow-100">My Portfolio</a>
+            <a href="/" className="text-2xl md:text-2xl font-bold text-yellow-500">King's Portfolio</a>
             <nav className="mt-4 md:mt-0 w-full md:w-auto flex flex-col md:flex-row md:items-center">
                 <ul className="flex flex-wrap md:flex-wrap justify-center items-center md:justify-start gap-x-4 gap-y-2 text-center text-xl">
                     <li><Link to="header" smooth={true} duration={500} className="text-yellow-500 cursor-pointer hover:bg-gray-400 hover:bg-opacity-10 rounded-lg px-2">Home</Link></li>
-                    <li><Link to="certificate" smooth={true} duration={500} className="text-yellow-500 cursor-pointer hover:bg-gray-400 hover:bg-opacity-10 rounded-lg px-2">Certificate</Link></li>
+                    <li><Link to="certificate" smooth={true} duration={500} className="text-yellow-500 cursor-pointer hover:bg-gray-400 hover:bg-opacity-10 rounded-lg px-2">Certificates</Link></li>
                     <li><Link to="experience" smooth={true} duration={500} className="text-yellow-500 cursor-pointer hover:bg-gray-400 hover:bg-opacity-10 rounded-lg px-2">Experience</Link></li>
                     <li><Link to="projects" smooth={true} duration={1000} className="text-yellow-500 cursor-pointer hover:bg-gray-400 hover:bg-opacity-10 rounded-lg px-2">Projects</Link></li>
                     <li><Link to="skills" smooth={true} duration={1300} className="text-yellow-500 cursor-pointer hover:bg-gray-400 hover:bg-opacity-10 rounded-lg px-2">Skills</Link></li>

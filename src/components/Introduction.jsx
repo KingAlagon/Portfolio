@@ -23,7 +23,7 @@ function Introduction() {
             {/* Text Content */}
             <div className="flex flex-col space-y-6 md:w-1/2 mt-20 sm:mt-10 sm:px-4 z-10">
                 <h1 className="text-3xl md:text-5xl font-bold mb-2">
-                    Hello! <br /> I'm King Christopher <br /> Alagon<span className="text-yellow-500">.</span>
+                    Hello<span className="text-yellow-500">!</span> <br /> I'm King Christopher <br /> Alagon<span className="text-yellow-500">.</span>
                 </h1>
                 <h3 className="text-2xl md:text-3xl font-bold">
                     And I'm a <span className="text-2xl md:text-3xl multiple-text text-yellow-500"></span>
