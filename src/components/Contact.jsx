@@ -15,7 +15,7 @@ function Contact() {
         });
     }, []);
     return (
-        <div id="contact" className="bg-gray-800 text-white py-16 px-8 flex flex-col items-center justify-center">
+        <div id="contact" className="bg-gray-900 text-white py-16 px-8 flex flex-col items-center justify-center">
             {/* Section Header */}
             <div className="text-center mb-12" data-aos="fade-up">
                 <h2 className="text-4xl font-bold text-yellow-500">Contact Me</h2>

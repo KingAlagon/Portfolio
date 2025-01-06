@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Certificates from './components/Certificates';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -53,6 +54,7 @@ function App() {
           <div ref={introRef}>
             <Introduction />
           </div>
+          <Certificates />
           <Experience />
           <Projects />
           <Skills />

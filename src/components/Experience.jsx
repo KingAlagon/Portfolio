@@ -18,7 +18,7 @@ const Experience = () => {
             role: 'IT Staff',
             company: 'AEGSI',
             location: 'Davao City',
-            date: 'June - December 2022',
+            date: 'June 2022 - December 2022',
             details: [
                 'Technical Support',
                 'Software Installation and Maintenance',
@@ -30,7 +30,7 @@ const Experience = () => {
             role: 'Head Programmer',
             company: 'Stocklogix Inventory System Application',
             location: 'Davao City',
-            date: 'March 2023',
+            date: 'March 2023 - December 2023',
             details: [
                 'Inventory Management System Application',
                 'VB.Net',
@@ -42,7 +42,7 @@ const Experience = () => {
             role: 'Web Developer - Project Manager',
             company: 'KLAN 3D PRINTING INC.',
             location: '',
-            date: 'August 27, 2024 - November 2024',
+            date: 'August 2024 - December 2024',
             details: [
                 'Laravel Framework',
                 'CPANEL Web Hosting',
@@ -54,8 +54,8 @@ const Experience = () => {
         {
             role: 'Virtual Assistant - Data Analyst - Data Entry',
             company: 'M and M Business Solutions Company',
-            location: '',
-            date: '2023 - 2024',
+            location: 'Davao City',
+            date: 'May 2023 - December 2024',
             details: [
                 'Back-end Report',
                 'Excel Coding Automation',
@@ -69,7 +69,7 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience" className="bg-gray-900 py-12 px-4 min-h-screen flex flex-col items-center justify-center">
+        <section id="experience" className="bg-gray-800 py-12 px-4 min-h-screen flex flex-col items-center justify-center">
             <div className="max-w-5xl w-full text-center">
                 <div data-aos="fade-up">
                     <h2 className="text-4xl font-bold text-yellow-500" >My Experience</h2>
@@ -82,7 +82,7 @@ const Experience = () => {
                         <div data-aos="flip-right" data-aos-once="true" className="relative">
                             <div
                                 key={index}
-                                className="relative bg-gray-800 h-80 p-6 rounded-lg shadow-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105" >
+                                className="relative bg-gray-900 h-80 p-6 rounded-lg shadow-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105" >
 
                                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white transition-opacity duration-300 ease-in-out opacity-100 group-hover:opacity-0">
                                     {exp.icon}
@@ -93,7 +93,7 @@ const Experience = () => {
                                 </div>
 
 
-                                <div className="absolute inset-0 bg-gray-800 p-6 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                <div className="absolute inset-0 bg-gray-900 p-6 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     <h3 className="text-xl font-semibold text-center">{exp.role}</h3>
                                     <ul className="mt-4 text-gray-300 list-disc list-inside space-y-2 text-left">
                                         {exp.details.map((detail, idx) => (
