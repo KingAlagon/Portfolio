@@ -18,7 +18,7 @@ export default function CertificateSection() {
                 <div className="max-w-4xl w-full text-center" data-aos="fade-up">
                     <h2 className="text-4xl font-bold text-yellow-500">My Certifications</h2>
                     <p className="text-gray-400 mt-4 mb-8">
-                        A showcase of certifications demonstrating my expertise in English proficiency, attention to detail, DISC personality assessment, and psychological evaluation.
+                        A showcase of certifications and demonstrating my expertise in English proficiency, attention to detail, DISC personality assessment, and psychological evaluation.
                     </p>
                 </div>
 
