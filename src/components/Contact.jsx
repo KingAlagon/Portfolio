@@ -1,19 +1,39 @@
-
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import React, { useEffect } from "react";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowUp } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
 
 function Contact() {
-    useEffect(() => {
+    const [showButton, setShowButton] = useState(false);
 
+    useEffect(() => {
         AOS.init({
             duration: 1000,
             easing: "ease-in-out",
             once: true,
         });
+
+        // Show back-to-top button when scrolling down
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    // Scroll to top function
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
     return (
         <div id="contact" className="bg-gray-900 text-white py-16 px-8 flex flex-col items-center justify-center">
             {/* Section Header */}
@@ -92,7 +112,15 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            {showButton && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-8 right-8 bg-yellow-500 text-gray-900 p-3 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300">
+                    <FaArrowUp className="text-2xl" />
+                </button>
+            )}
         </div>
+        
     );
 }
 
