@@ -9,7 +9,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
-
+import { Analytics } from '@vercel/analytics/react';
 function App() {
   const [loading, setLoading] = useState(true);
   const headerRef = useRef(null);
@@ -48,6 +48,7 @@ function App() {
         <Preloader />
       ) : (
         <>
+          <Analytics />
           <div ref={headerRef}>
             <Header />
           </div>
